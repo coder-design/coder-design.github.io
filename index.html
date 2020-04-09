@@ -2,64 +2,182 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Project: Blog</title>
-    </head>
-    <style>
-        body{background-color: rgb(173, 59, 17);
-            font-family: monospace;}
-            
-        p{color: rgb(255, 255, 255);}
+        <title>Project: Event invite</title>
+        <style>
         
-        #content{color: rgb(115, 7, 7);
+        body{
+            background-color: rgb(12, 210, 245);
+            font-family: monospace;
+        }    
+        
+        h1{
+            color: rgb(24, 57, 189);
             font-family: fantasy;
-            font-size: 30px;}
-            
-        h3{color: rgb(255, 121, 87);}
+            text-align: center;
+            border-style: dashed;
+        }    
         
-        h5{color: rgb(186, 166, 166);}
-        .heading{color: black;
-            font-style: italic;}
-            
-        li{color: black;
-            font-size: 15px;}
-        
-        h1{text-align: center;
+        h2{
+            color: rgb(22, 88, 138);
             font-family: cursive;
-            color: red;
-            line-height: 2em;
-            font-weight: bold;
-        } 
-    </style>
-    <body>
+        }
         
-        <h1 id="top">Jessica's blog</h1>
+        h3{
+            color: rgb(186, 67, 52);
+            font-family: serif;
+        }
+        
+        #plate{
+            float: right;
+            height: 170px;
+            margin-top: 5px;
+            position: relative;
+            bottom: 40px;
+            left: -30px;
+            border-style: ridge;
+        }    
+        
+        ol{
+          float: left;
+          width:33%;
+          margin-top: 5px;
+          margin-right: 5px;
+        }
+        
+        #bread{
+            height: 120px;
+            float: right;
+            position: relative;
+            bottom: 110px;
+            right: 130px;
+            border-style: ridge;
+        }
+        
+        #table{
+            height:180px;
+            float: right;
+            height:200px;
+            position: relative;
+            right: 40px;
+            bottom: 100px;
+            border-style: ridge;
+        }
+        
+        #border{
+            border-style: dashed;
+            padding: 10px;
+        }
+        
+        #please{
+            color: white;
+            font-family: sans-serif;
+        }
+        
+        a.top {
+            position: relative;
+            top: 180px;
+            right: 230px;
+        }
+        
+        .details{
+            text-decoration: underline;
+            color: rgb(82, 92, 69);
+        }
+        
+        #content{
+            color: rgb(163, 24, 184);
+            font-size: 25px;
+            margin-bottom: 1px;
+        }
+        
+        #contents{
+            margin-top: 5px;
+        }
+        
+        a:hover, a:active, a:focus{
+            background-color: rgb(224, 175, 76);
+        }
+         
+        #everything{
+            background-color: rgb(176, 160, 176);
+            width:40%;
+        }    
+        </style>
 
-        <h2 id="content">Contents</h2>
-        <ul>
-            <li> <a href="#about">About Jessica</a></li>
-            <li> <a href="#first">First post!</a></li>
-            <li><a href="#second">Second Post!</a></li>
-        </ul>
+    </head>
+    <body>
+    
+        <h1 id="top">You're invited!</h1>
+    
+        <h2>To my Pesach Seder!</h2>
         
-        <h2 id="about" class="heading">About Jessica</h2>
-        <p>Hi! I am Jessica, but you can call me Jess, Jessie, or you can call me Jessica (I do not care!). I was born in 2003. I love to <strong>code</strong> and I would love to learn how to <strong>sign</strong> and mabe even how to <strong>speak Hebrew</strong> one day! I also love to <strong>workout</strong>, <em>especially</em> at CrossFit, and I love to throw <strong>Shot-Put</strong> for my high school Track&Field team. I love scifi and action tv shows and movies. Marvel movies are my favorite type of movies, and <strong>Robert Downey Jr.</strong>, otherwise known as Iron Man, is my favorite superheo! Lastly, I am Jewish, and one of my <em>happiest</em> places is when I am at a <strong>NFTY event</strong>, which is a Jewish oranization!</p>
-        <h6><a href="#content">Back To Table of Contents</a></h6>
+        <h3 id="content">Contents</h3>
+            <ul id="contents">
+                 <li><a href="#detail">The Details</a></li>
+                <li><a href="#about">About Passover</a></li>
+                <li><a href="#long">How Long is Passover?</a                 ></li>
+                <li><a href="#no">What Can You Not Eat                      During Passover?</a></li>
+                <li><a href="#seder">What Must Be on the                    Seder Plate During the Pesach Seder?</a></li                >
+            
+            </ul>
         
-        <h2 id="first" class="heading">First post</h2>
-        <h3>Day 1 of Quarantine</h3>
-        <h5>March 15th, 2020</h5>
-        <p>I decided to sleep most of the day because I was not allowed to leave the house. Once I <em>finally</em> woke up, I ate some breakfast and I decided to do a <strong>workout</strong>. After I worked out I watched telivison all day. It was pretty boring but I did not want to do anywork if I did not have to. In additon for me being stuck at home, my sister was not home from college yet because she goes to college in North Carolina and has not been able to get a ticket home yet.</p>
-        <h6><a href="#content">Back To Table of Contents</a></h6>
+    <div id="everything">
+        <h3 id="detail">The Details:</h3>
+            <ul>
+                <li><span class="details">Dress Code</span>:                 Casual Formal</li>
+                <li><span class="details">Date</span>: April                 7th</li>
+                <li><span class="details">Time</span>: 6pm                  </li>
+                <li><span class="details">Place</span>: My                  House</li>
+            </ul>
+    </div>    
+            <img id="table" src="https://upload.wikimedia.org/wikipedia/commons/5/50/Pessach_Pesach_Pascha_Judentum_Ungesaeuert_Seder_datafox.jpg" alt="table for the seder">
+      
+            <p id="please">Please join me and my family,                while          
+            <br>we host a beautiful passover Seder.</p>
+      
+            <a href="#content">Back to Contents!</a>  
         
-        <h2 id="second" class="heading">Second post</h2>
-        <h3> Day 19 0f Quarantine</h3>
-        <h5>April 4th, 2020</h5>
-        <p>Today I woke up around 10am, and I walked my dog around our block. It was funny, because I <em>barely</em> saw anyone on my walk. After I got home I fed my dog, and I made myself something for breakfast. I then decided that I <em>should</em> work on some <strong>homework</strong>. Later that day, I did some <strong>coding</strong>, and it was really fun! I had a brussel sprout salad for lunch that was <em>amazing</em>. Lastly, I decided to do a <strong>workout</strong>. As you can see by the title, it is now day 19 of Quarantine and I am getting incredibly bored on doing <strong>nothing</strong> all day, so I am trying to be more prodictive <em>everyday</em>!</p>
+        <h3 id="about">A Little About Passover</h3>
         
+            <p>Passover or Pesach (פֶּסַח‎) is a major                  Jewish holiday and one of the most widely                   celebrated Jewish holidays. Together with                   Shavuot and Sukkot, Passover was one of the                 Three Pilgrimage Festivals during which the                 entire population of the kingdom of Judah made a             pilgrimage to the Temple in Jerusalem. Samaritan             s still make this pilgrimage to Mount Gerizim,              but only men participate in public worship.</p>
+      
+            <a href="#content">Back to Contents!</a>  
         
+        <h3 id="long">How long is Passover?</h3>
+    
+            <p>Passover is 8 days longs. It starts after the             sunsets (this year it begins the evening of                 Wednesday, April 7th) and ends after sunset 8               days later (this year it ends the evening of                Thursday, April 16).</p>
+  
+            <a href="#content">Back to Contents!</a>
+    
+        <h3 id="no">What Can You Not Eat During Passover            ?</h3>
         
-    <p><a href="#top"> Back to the Top!</a></p>
+            <ul id="not">
+                Anything with...
+                <li>Wheat</li>
+                <li>Barley</li>
+                <li>Rye</li>
+                <li>Oats</li>
+                <li>Spelt</li> 
+            </ul>
         
+            <img  id="bread" src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Korb_mit_Br%C3%B6tchen.JPG" alt="bread">
+       
+            <a href="#content">Back to Contents!</a>
+  
+        <h3 id="seder">What Must be on the Seder Plate              during the Pesach Seder?</h3>
+    
+            <ol>
+                <li><span class="details">Z'roa</span>:                     roasted lamb shank bone</li>
+                <li><span class="details">Beitzah</span>: a                 roasted or hard-boiled egg</li>
+                <li><span class="details">Maror</span>: a                   bitter herb</li>
+                <li><span class="details">Chazeret</span>: a                 second bitter herb</li>
+                <li><span class="details">Charoset</span>: a                 sweet fruit mixture made with wine, honey or                 nuts</li>
+                <li><span class="details">Karpas</span>: a                  green vegetable</li>
+            
+            </ol>
+        
+            <img id="plate" src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Passover_Seder_plate%2C_numbered.jpg" alt= "the seder plate with the 6 foods on it">
+        <a class="top" href="#top">Back To Top!</a>
         
     </body>
 </html>
