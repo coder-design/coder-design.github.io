@@ -8,6 +8,7 @@
         body{
             background-color: rgb(12, 210, 245);
             font-family: monospace;
+            width: 400px;
         }    
         
         h1{
@@ -29,17 +30,15 @@
         
         #plate{
             float: right;
-            height: 170px;
+            height: 160px;
             margin-top: 5px;
-            position: relative;
-            bottom: 15px;
-            right: 30px;
+            position: absolute;
             border-style: ridge;
         }    
         
         ol{
           float: left;
-          width:200px;
+          width:150px;
           margin-top: 5px;
           margin-right: 5px;
         }
@@ -47,9 +46,9 @@
         #bread{
             height: 120px;
             float: right;
-            position: relative;
-            bottom: 110px;
-            right: 125px;
+            position: absolute;
+            top: 653px;
+            left: 200px;
             border-style: ridge;
         }
         
@@ -57,9 +56,9 @@
             height:180px;
             float: right;
             height:200px;
-            position: relative;
-            right: 90px;
-            bottom: 120px;
+            position: absolute;
+            left: 235px;
+            top: 140px;
             border-style: ridge;
         }
         
@@ -71,12 +70,6 @@
         #please{
             color: white;
             font-family: sans-serif;
-        }
-        
-        a.top {
-            position: relative;
-            top: 180px;
-            right: 230px;
         }
         
         .details{
@@ -102,6 +95,14 @@
             background-color: rgb(176, 160, 176);
             width:200px;
         }    
+        
+        #fixed{
+            position: fixed;
+            z-index: 2;
+            left: 410px;
+            width: 30%;        
+            top: 64px;
+        }
         </style>
 
     </head>
@@ -111,16 +112,17 @@
     
         <h2>To my Pesach Seder!</h2>
         
-        <h3 id="content">Contents</h3>
+        <div id="fixed"><h3 id="content">Contents</h3>
             <ul id="contents">
                  <li><a href="#detail">The Details</a></li>
                 <li><a href="#about">About Passover</a></li>
                 <li><a href="#long">How Long is Passover?</a ></li>
                 <li><a href="#no">What Can You Not Eat During Passover?</a></li>
                 <li><a href="#seder">What Must Be on the    Seder Plate During the Pesach Seder?</a></li>
+                <li><a href="#details">Back To Top!</a></li>
             
             </ul>
-        
+        </div>
     <div id="everything">
         <h3 id="detail">The Details:</h3>
             <ul>
@@ -132,21 +134,15 @@
     </div>    
             <img id="table" src="https://upload.wikimedia.org/wikipedia/commons/5/50/Pessach_Pesach_Pascha_Judentum_Ungesaeuert_Seder_datafox.jpg" alt="table for the seder">
       
-            <p id="please">Please join me and my family, while<br>we host a beautiful passover Seder.</p>
-      
-            <a href="#content">Back to Contents!</a>  
+            <p id="please">Please join me and my family,<br> while we host a beautiful<br> passover Seder.</p>
         
         <h3 id="about">A Little About Passover</h3>
         
             <p>Passover or Pesach (פֶּסַח‎) is a major Jewish holiday and one of the most widely celebrated Jewish holidays. Together with Shavuot and Sukkot, Passover was one of the Three Pilgrimage Festivals during which the entire population of the kingdom of Judah made a pilgrimage to the Temple in Jerusalem. Samaritas still make this pilgrimage to Mount Gerizim, but only men participate in public worship.</p>
-      
-            <a href="#content">Back to Contents!</a>  
         
         <h3 id="long">How long is Passover?</h3>
     
             <p>Passover is 8 days longs. It starts after the sunsets (this year it begins the evening of Wednesday, April 8th) and ends after sunset 8 days later (this year it ends the evening of Thursday, April 16).</p>
-  
-            <a href="#content">Back to Contents!</a>
     
         <h3 id="no">What Can You Not Eat During Passover?</h3>
         
@@ -160,8 +156,6 @@
             </ul>
         
             <img  id="bread" src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Korb_mit_Br%C3%B6tchen.JPG" alt="bread">
-       
-            <a href="#content">Back to Contents!</a>
   
         <h3 id="seder">What Must be on the Seder Plate during the Pesach Seder?</h3>
     
@@ -176,7 +170,7 @@
             </ol>
         
             <img id="plate" src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Passover_Seder_plate%2C_numbered.jpg" alt= "the seder plate with the 6 foods on it">
-        <a class="top" href="#top">Back To Top!</a>
+        
         
     </body>
 </html>
